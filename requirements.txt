@@ -3,3 +3,4 @@ pillow
 numpy
 tensorflow
 tensorflow_hub
+tf_clahe
