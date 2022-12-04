@@ -22,12 +22,13 @@ def load_model():
 if __name__ == '__main__':
 
     model = load_model()
+    st.image("https://cdn-icons-png.flaticon.com/512/4193/4193294.png", width=100)
     st.title('COVID-19 Pneumonia Classifier')
     st.markdown('##### An Efficient Deep Learning Algorithm For COVID-19 Pneumonia Detection Using Chest Radiography Imaging')
     st.caption('The algorithm has been trained to distinguish between normal, COVID-19 pneumonia, and other viral or bacterial pneumonia patients. The image will be enhanced using CLAHE technique prior to being passed onto the prediction model.')
     CLASS_NAMES = ['normal', 'pneumonia', 'COVID-19']
 
-    file = st.file_uploader("Upload a chest x-ray", type=["jpg", "png"])
+    file = st.file_uploader("Upload a chest x-ray", type=["jpg", "png", "jpeg"])
 
     if file is None:
         st.text('Waiting for upload....')
