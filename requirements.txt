@@ -1,4 +1,5 @@
-PIL
+streamlit
+pillow
 numpy
 tensorflow
 tensorflow_hub
