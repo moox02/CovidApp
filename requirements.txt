@@ -1,0 +1,4 @@
+PIL
+numpy
+tensorflow
+tensorflow_hub
